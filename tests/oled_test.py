@@ -10,7 +10,7 @@ from PIL import ImageDraw
 
 
 # Raspberry Pi pin configuration:
-RST =24
+RST =None
 # Note the following are only used with SPI:
 DC = 23
 SPI_PORT = 0
@@ -104,3 +104,4 @@ while True:
         pos = startpos
     # Pause briefly before drawing next frame.
     time.sleep(0.1)
+

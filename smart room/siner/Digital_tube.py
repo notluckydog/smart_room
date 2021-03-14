@@ -15,7 +15,7 @@ class Digital():
       self.status = 0   #传感器状态图标，为0时表示不在线
 
    def start(self):
-      Display = tm1637(self.pin1,self.pin2,tm1637.BRIGHT_TYPICAL)
+      Display = tm1637.TM1637(self.pin1,self.pin2,tm1637.BRIGHT_TYPICAL)
       Display.Clear()
       Display.SetBrightnes(1)
 
@@ -31,3 +31,6 @@ class Digital():
 
          time.sleep(1)
 
+if __name__ =='__main__':
+   a = Digital(17,18)
+   a.start()

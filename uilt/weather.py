@@ -8,7 +8,7 @@ def weatherforlifestyle():
     value = {
             'location':'114.178108,22.808359',
             'key': '57e20e831816408784f111288c9fc25a',
-            'lang': 'zh'
+            'lang': 'en'
 
         }
 
